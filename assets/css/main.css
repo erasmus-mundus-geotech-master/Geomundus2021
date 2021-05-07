@@ -107,7 +107,8 @@ body {
     height: 600px;
     width: 80%;
 }
-ul.topnav,.mobile_menu {
+
+ul.menu,.mobile_menu {
     position: fixed;
     list-style-type: none;
     margin: 0;
@@ -116,10 +117,10 @@ ul.topnav,.mobile_menu {
     z-index: 999;
     width: 100%;
     max-height: 100%;
-    background-color: #4FA49A;
-    left:0;
-    
+    background-color: white;
+    left:0;   
 }
+
 .alertbanner{
     position: fixed;
     max-width: 100%;
@@ -135,129 +136,145 @@ ul.topnav,.mobile_menu {
     color:white;
     white-space: normal;
 }
+
 .alert_content{
     max-width: 95%;
 }
+
 .close{
     position: fixed;
     font-size: 30px;
     top:2%;
     right:2%;
 }
+
 .close:hover,.close>a:hover{
     color: rgb(58, 47, 58);
 }
-ul.topnav li {
-    float: left;
+
+.menu, .mobile_menu { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    align-items: center;
+    border-bottom: 1px solid rgb(182, 182, 182);
 }
-ul.topnav li.has-dropdown,#menu_btn{
+
+.menu_logo {
+    margin-left: 220px;
+    margin-right: 50px;
+    height: 50px;
+    width: 150px;
+}
+
+ul.menu li:last-child {
+    margin-right: 220px;
+}
+
+ul.menu li.has-dropdown,#menu_btn{
     cursor: pointer;
+    color: #363636; 
+    font-size:20px;
 }
+
 ul.main-menu-dropdown {
-    background-color: rgba(78, 164, 154, 0.9);
+    background-color: white;
     position: absolute;
     list-style: none;
     margin: 0;
     padding: 0;
     display: none;
-    text-align:center;
+    text-align: left;
 }
 
-ul.topnav li a {
+ul.menu li a {
     display: inline-block;   
-    color: #f2f2f2;    
-    text-align: center;
+    color: #363636;    
+    text-align: left;
     padding: 10px 10px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 17px;
-    font-weight:400;
+    font-size: 18px;
+    font-weight: 500;
 }
 
-ul.topnav li a:hover {
-    background-color: #4361C2;    
+ul.menu li a:hover {
+    color: #1DCDFE; 
+    background-color: white;    
     text-shadow:#ffffff 0 0 0.2em;
 }
  
-ul.topnav li.icon {
+ul.menu li.icon {
     display: none;
 } 
-.mobile_menu{
-    display: none;
-}
-.menu_home,.mobile_menu_home{
-    margin: 5px;
-    width: 40px;
-    height: 40px;
-    float: left;
-}
-.menu_home a:hover,.mobile_menu_home a:hover{
-    background-color: #4361C2;
-}
-.mobile_menu_home{
-    display: none;
-}
 
+.mobile_menu, .mobile_menu_logo {
+    display: none;
+}
 
 @media screen and (max-width:680px) {
-    .icon {
-        float: right;
-        display: inline-block;        
+    
+    .mobile_menu{
+        color: #363636;
+        display: flex;
+        justify-content: space-between;  
+        padding: 10px 10px;
+        transition: 0.3s;
+        font-size: 48px;
+        left:0;
     }
-    ul.topnav li:not(:first-child) {
+
+    .mobile_menu li a:hover{
+        color:#3a2f3a;
+        background-color: white;    
+        text-shadow:#ffffff 0 0 0.2em;
+    }
+
+    .menu, .menu_logo, #hide {
         display: none;
-    } 
+    }
+
+    .mobile_menu_logo {
+        display: block;
+        height: 50px;
+        width: 150px;
+    }
+
     .alert_content{
         max-width: 90%;
     }
-    .mobile_menu{
-    color: #f2f2f2;
-    display: inline-block;   
-    text-align: center;
-    padding: 10px 10px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 48px;
-    left:0;
-}
-.mobile_menu li a:hover{
-    background-color: #4361C2;    
-    text-shadow:#ffffff 0 0 0.2em;
-}
-    #hide{display: none;}
-    ul.topnav.responsive {
+
+    ul.menu.responsive {
         position: fixed;      
-        top:40px;  
+        top: 40px;  
         max-height: 80%;
         overflow-y: auto;
     }
-    ul.topnav.responsive li {
+
+    ul.menu.responsive li {
         float: none;
         display: inline;
     }
-    ul.topnav.responsive li a {
+
+    ul.menu.responsive li a {
         display: block;
         text-align: left;
     }
-    ul.topnav.responsiv {
-        overflow-y:auto;
+
+    ul.menu.responsive {
+        overflow-y: auto;
     }
-    ul.topnav.responsive li.has-dropdown ul.main-menu-dropdown {
-        position:static;
+
+    ul.menu.responsive li.has-dropdown ul.main-menu-dropdown {
+        position: static;
         padding: 10px 10px;
     }
-    .menu_home{
-       display: none;
-    }
-    .mobile_menu_home{
-        display: block;
-    }
-    
 
 }
 
 .active {
-    background-color:#4361C2;
+    color: #1DCDFE;
+    background-color:white;
 }
 
 article,
@@ -322,8 +339,6 @@ body {
 .container .submission {
     display: none;
 }
-
-
 
 .container {
     margin-left: auto;
