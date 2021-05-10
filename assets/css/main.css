@@ -163,6 +163,7 @@ ul.menu,.mobile_menu {
 .menu_logo {
     margin-left: 220px;
     margin-right: 50px;
+    margin-top: 10px;
     height: 50px;
     width: 150px;
 }
@@ -174,11 +175,12 @@ ul.menu li:last-child {
 ul.menu li.has-dropdown,#menu_btn{
     cursor: pointer;
     color: #363636; 
-    font-size:20px;
+    font-size: 20px;
 }
 
 ul.main-menu-dropdown {
     background-color: white;
+    width: 150px;
     position: absolute;
     list-style: none;
     margin: 0;
@@ -2095,7 +2097,7 @@ header.major h3,
 header.major h4,
 header.major h5,
 header.major h6 {
-    margin: 0;
+    margin: 50px 0px 0px 0px;
 }
 
 header.major p {
