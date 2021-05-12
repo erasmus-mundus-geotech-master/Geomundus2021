@@ -1,8 +1,23 @@
+// Mobile menu: Show or hide items
+$(document).ready(
 
-//menu control
+    function() {
+    $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+            $(this).find("a").html("<i class='fas fa-bars'></i>");
+        } 
+        else {
+            $(".item").addClass("active");
+            $(this).find("a").html("<i class='fas fa-times'></i>");
+        }
+    });
+});
+
+// All menus: Show or hide dropdown items
 $(document).ready(
     function(){
-    //menu open/close control
+    
     $('.menu>.has-dropdown').click(
             function(){
             $(this).find('.main-menu-dropdown').slideToggle();
@@ -14,7 +29,10 @@ $(document).ready(
             $(this).siblings('.has-dropdown').find('.main-menu-dropdown').slideUp();
         }
     );
-   topmenu();
+});
+
+/*
+    topmenu();
     function topmenu(){    
         let h = $('.alertbanner').css('height');
         if (h!==undefined) {
@@ -62,7 +80,7 @@ $(document).ready(
         topmenu();
     })
 
-});
+*/
 
 //map control
 function toggle(a) {
@@ -80,7 +98,6 @@ function toggle(a) {
         x.nextElementSibling.style.display = 'none';
     }
 }
-
 
 var map;
 var markers;
