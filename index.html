@@ -30,15 +30,9 @@
     <script src="js/includeHTML.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/gallery.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/elastislide.css" />
+    <script src="https://kit.fontawesome.com/b37653d681.js"></script>
     <!-- <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' /> -->
-    <noscript>
-        <style>
-            .es-carousel ul{
-                display:block;
-            }
-        </style>
-    </noscript>
     <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
         <div class="rg-image-wrapper">
             {{if itemsCount > 1}}
@@ -61,56 +55,50 @@
 <body onload="initMap()">
 
     <!-- MENU -->
-    <ul class="menu" id="hide">
-        <a href="index.html#header"><img class='menu_logo' src="images/main/geomundus2021_logo.png" alt=""></a>
-        <li class="item has-dropdown"><a>Introduction</a>
-            <ul class="main-menu-dropdown">
-                <li><a href="index.html#info">Information</a></li>
-                <li><a href="index.html#footer">History</a></li>
-            </ul>            
-        </li>
-        <li class="item has-dropdown"><a>Program</a>
-            <ul class="main-menu-dropdown">
-                <li><a href="program.html">Schedule</a></li>
-                <li><a href="speakers.html">Speakers</a></li>
-            </ul>
-        </li>
-        <li class="item"><a href="registration.html">Registration</a></li>
-        <li class="item"><a href="submission.html">Submission</a></li>
-        <li class="item has-dropdown"><a>Mapathon</a>
-            <ul class="main-menu-dropdown">
-                <li><a href="mapathon.html">Information</a></li>
-                <li><a href="map_gallery.html">Gallery</a></li>
-            </ul>
-        </li>
-        <li class="item"><a href="team.html">Team</a></li>
-        <li class="item"><a href="index.html#sponsors" >Sponsors</a></li>
-        <li class="item"><a href="index.html#contact">Contact</a></li>
-    </ul>
-    <ul class="mobile_menu">
-        <a href="index.html#header"><img class='mobile_menu_logo' src="images/main/geomundus2021_logo.png" alt=""></a>
-        <li class="icon">
-            <a id='menu_btn'>☰</a>
-        </li>
-    </ul>
-  
+    <nav>
+        <ul class="menu">
+            <a href="index.html#header"><img class='menu_logo' src="images/main/geomundus2021_logo.png" alt=""></a>
+            <li class="item has-dropdown"><a>Introduction</a>
+                <ul class="main-menu-dropdown">
+                    <li><a href="index.html#info">Information</a></li>
+                    <li><a href="index.html#footer">History</a></li>
+                </ul>            
+            </li>
+            <li class="item has-dropdown"><a>Program</a>
+                <ul class="main-menu-dropdown">
+                    <li><a href="program.html">Schedule</a></li>
+                    <li><a href="speakers.html">Speakers</a></li>
+                </ul>
+            </li>
+            <li class="item"><a href="registration.html">Registration</a></li>
+            <li class="item"><a href="submission.html">Submission</a></li>
+            <li class="item has-dropdown"><a>Mapathon</a>
+                <ul class="main-menu-dropdown">
+                    <li><a href="mapathon.html">Information</a></li>
+                    <li><a href="map_gallery.html">Gallery</a></li>
+                </ul>
+            </li>
+            <li class="item"><a href="team.html">Team</a></li>
+            <li class="item"><a href="index.html#sponsors" >Sponsors</a></li>
+            <li class="item"><a href="index.html#contact">Contact</a></li>
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
  
     <!-- Header: GeoMundus PRESENTATION -->
-    <section id="header" align="center">
+    <section id="header" text-align="center">
         <div class="inner">
-            <div align="center">
-
+            <div text-align="center">
                 <div>
-                    <img src="images/main/geomundus2021_logo.png" style="vertical-align: middle; margin-top: 80px;" alt="" height="100" width="300" />
-                  <!--   <img src="images/erasmus-mundus.png" style="vertical-align: middle;margin-top: 2%;" alt="" height="50" width="185">-->
+                    <img src="images/main/geomundus2021_logo.png" class = "presentation_logo"/>
                 </div >   
                 <div>
-                    <h1> <strong>GeoMundus 2021</strong><br /></h1>    
+                    <h1><strong>GeoMundus 2021</strong><br /></h1>    
                     <strong><h2 style="color:white">Geospatial technologies: Fancy toys, or tangible outcomes?</h2></strong>
                     <h2>Hybrid Edition <strong><br/>26<sup>th</sup> and 27<sup>th</sup> November, 2021 - Lisbon </strong> </h2>
                     <strong><h3 style="color:#FFCD03">We are currently planning to carry out
                         a hybrid conference -<br>an event with both in-person and remote
-                        delegates that may turn to fully virtual if possible.<br>
+                        delegates that may turn to fully virtual if needed.<br>
                     </h3></strong> 
                    <!-- <strong><h3 style="color:#FFCD03">A huge thanks to everyone that contributed to the success of Geomundus 2020. <br>
                         See you next year in the virtual or in the real world!
