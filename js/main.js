@@ -1,6 +1,5 @@
 // Mobile menu: Show or hide items
 $(document).ready(
-
     function() {
     $(".toggle").on("click", function() {
         if ($(".item").hasClass("active")) {
@@ -17,7 +16,6 @@ $(document).ready(
 // All menus: Show or hide dropdown items
 $(document).ready(
     function(){
-    
     $('.menu>.has-dropdown').click(
             function(){
             $(this).find('.main-menu-dropdown').slideToggle();
@@ -30,6 +28,65 @@ $(document).ready(
         }
     );
 });
+
+
+function show(dv){
+
+    if(dv == '1'){
+        document.getElementById("keynote-1").style.display = "block";
+        document.getElementById("speaker-1").style.display = "none";
+    }
+    else if(dv == '2'){
+        document.getElementById("keynote-2").style.display = "block";
+        document.getElementById("speaker-2").style.display = "none";
+    }
+    else if(dv == '3'){
+        document.getElementById("keynote-3").style.display = "block";
+        document.getElementById("speaker-3").style.display = "none";
+    }
+    else if(dv == '4'){
+        document.getElementById("keynote-4").style.display = "block";
+        document.getElementById("speaker-4").style.display = "none";
+    }
+    else if(dv == '5'){
+        document.getElementById("keynote-5").style.display = "block";
+        document.getElementById("speaker-5").style.display = "none";
+    }
+    else if(dv == '6'){
+        document.getElementById("keynote-6").style.display = "block";
+        document.getElementById("speaker-6").style.display = "none";
+    }
+}
+
+function hide(dv){
+
+    if(dv == '1'){
+        document.getElementById("keynote-1").style.display = "none";
+        document.getElementById("speaker-1").style.display = "block";
+    }
+    else if(dv == '2'){
+        document.getElementById("keynote-2").style.display = "none";
+        document.getElementById("speaker-2").style.display = "block";
+    }
+    else if(dv == '3'){
+        document.getElementById("keynote-3").style.display = "none";
+        document.getElementById("speaker-3").style.display = "block";
+    }
+    else if(dv == '4'){
+        document.getElementById("keynote-4").style.display = "none";
+        document.getElementById("speaker-4").style.display = "block";
+    }
+    else if(dv == '5'){
+        document.getElementById("keynote-5").style.display = "none";
+        document.getElementById("speaker-5").style.display = "block";
+    }
+    else if(dv == '6'){
+        document.getElementById("keynote-6").style.display = "none";
+        document.getElementById("speaker-6").style.display = "block";
+    }
+}
+
+
 
 /*
     topmenu();
