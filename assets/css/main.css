@@ -2623,7 +2623,7 @@ textarea {
 }
 
 .img-circle-div {
-    border: 10px solid #8addaa;
+    border: 10px solid #c3c6c7;
     height: 200px;
     width: 200px;
     border-radius: 70%;
@@ -2639,7 +2639,7 @@ textarea {
 }
 
 .img-circle-div:hover {
-    border: 10px solid #7d9d4e;
+    border: 10px solid #000000;
 }
 
 .row-centered {
