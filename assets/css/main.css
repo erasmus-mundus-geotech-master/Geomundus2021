@@ -171,7 +171,7 @@ ul.main-menu-dropdown li {
         order: 0;
     }
      
-    .item {
+    .menu .item {
         order: 1;
         display: block;
         width: auto;
@@ -191,7 +191,7 @@ ul.main-menu-dropdown li {
         order: 1;
     }
     
-    .item {
+    .menu .item {
         order: 2;
         width: 100%;
         text-align: left;
@@ -199,7 +199,7 @@ ul.main-menu-dropdown li {
         padding: 10px 0px 10px 0px;
     }
     
-    .item.active {
+    .menu .item.active {
         display: block;
     }
 }
@@ -212,7 +212,7 @@ ul.main-menu-dropdown li {
     background-color: #4686a0;
     color: rgba(255, 255, 255, 0.75);
     background-attachment: fixed, fixed, fixed;
-    background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #34f5c5 5%, #1DCDFE 10%, #2F455C);
+    background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #34f5c5 5%, #1DCDFE 10%, #0c2138);
     background-position: top left, center center, center center;
     background-size: auto, cover, cover;
     overflow: hidden;
@@ -265,14 +265,14 @@ ul.main-menu-dropdown li {
     margin: 1em 0 0 0;
 }
 
-#header a.button {
+#header a.button, #participaton a.button {
     background-color: none;
     border: 1px solid #ffffff;
 }
 
-#header a.button:hover {
-    color: black;
-    background-color: white;
+#header a.button:hover, #participaton a.button:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.30);
     border: 1px solid #ffffff;
 }
 
@@ -410,6 +410,29 @@ ul.main-menu-dropdown li {
 
 /* END: Main - Speakers */
 
+/* FLEXBOX FOR COLUMNS */ 
+.two-columns-centered {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    align-items: center;
+    margin: 0px;
+}
+
+@media screen and (min-width: 680px) { 
+    .two-columns-centered .item {
+        display: inline;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 680px) { 
+    .two-columns-centered .item {
+        display: block;
+        width: auto;
+        margin: 20px;
+    }
+}
 /* ALL BUTTONS */
 .button {
     -moz-appearance: none;
@@ -2146,13 +2169,6 @@ a {
     text-decoration: none;
 }
 
-.intext_link{
-    color: #4a87d3;
-}
-.intext_link:hover{
-    color: #4a87d3;
-    background-color: rgb(223, 222, 223);
-}
 .location_ul{margin-top: 5%;}
 .location_ul li img{
     height: 400px;
@@ -2406,6 +2422,24 @@ textarea:focus {
     border-color: #4a87d3;
 }
 
+/* DROPDOWN SELECT */
+
+select {
+    color: white;
+    background-attachment: fixed, fixed, fixed;
+    background-image: url("images/overlay2.png"), url("images/overlay4.svg"), linear-gradient(45deg, #0c2138 25%, #1DCDFE 60%, #34f5c5 90%);
+    background-position: top left, center center, center center;
+    background-size: auto, cover, cover;
+    border: none;
+    font-weight: 500;
+}
+
+select option {
+    background: white;
+    color: #363636;
+    font-size: 18px;
+}
+
 .select-wrapper {
     text-decoration: none;
     display: block;
@@ -2416,13 +2450,7 @@ textarea:focus {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: none !important;
-}
-
-.select-wrapper:before {
-    color: rgba(144, 144, 144, 0.5);
+    color: white;
     content: '\f078';
     display: block;
     height: 2.75em;
@@ -2623,6 +2651,7 @@ textarea {
 }
 
 .img-circle-div {
+    background-color: white;
     border: 10px solid #c3c6c7;
     height: 200px;
     width: 200px;
@@ -2899,8 +2928,26 @@ table.alt tfoot {
 }
 
 .main.style2 {
-    background-color: rgb(46,98,124);
+    background-color: #0c2138;
     color: white;
+}
+
+.main.style1 .intext_link{
+    color: #0c2138;
+}
+
+.main.style1 .intext_link:hover{
+    color: #0c2138;
+    text-decoration: underline;
+}
+
+.main.style2 .intext_link{
+    color: #1DCDFE;
+}
+
+.main.style2 .intext_link:hover{
+    color: #1DCDFE;
+    text-decoration: underline;
 }
 
 .main.style2 h1,
@@ -3022,7 +3069,7 @@ table.alt tfoot {
     background-color: #1DCDFE;
     color: rgba(255, 255, 255, 0.75);
     background-attachment: fixed, fixed, fixed;
-    background-image: url("images/overlay2.png"), url("images/overlay4.svg"), linear-gradient(45deg, #2F455C, #1DCDFE 70%, #34f5c5 95%);
+    background-image: url("images/overlay2.png"), url("images/overlay4.svg"), linear-gradient(45deg, #0c2138, #1DCDFE 70%, #34f5c5 95%);
     background-position: top left, center center, center center;
     background-size: auto, cover, cover;
     text-align: center;
@@ -3120,7 +3167,7 @@ table.alt tfoot {
 }
 
 #footer .copyright {
-    font-size: 0.8em;
+    font-size: 13pt;
     list-style: none;
     margin: 2em 0 0 0;
     padding: 0;
