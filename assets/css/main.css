@@ -270,6 +270,10 @@ ul.main-menu-dropdown li {
     border: 1px solid #ffffff;
 }
 
+#participaton a.button {
+    padding: 5px;
+}
+
 #header a.button:hover, #participaton a.button:hover {
     color: white;
     background-color: rgba(255, 255, 255, 0.30);
@@ -3385,13 +3389,7 @@ table.alt tfoot {
     ul.actions.small li:first-child {
         padding-top: 0;
     }
-    /* Button */
-    input[type="submit"],
-    input[type="reset"],
-    input[type="button"],
-    .button {
-        padding: 0;
-    }
+
     /* Main */
     .main {
         padding: 2em 1.5em 0.1em 1.5em;
