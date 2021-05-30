@@ -99,7 +99,13 @@ video {
 }
 
 body {
-    margin: 0;
+    margin: 0px 0px 0px 0px;
+}
+
+@media screen and (max-width: 680px) { 
+    body {
+        margin: 50px 0px 0px 0px;
+    }
 }
 
 /* START: Menu settings */
@@ -2522,7 +2528,7 @@ textarea {
     text-align: center;
     outline: none;
     display: block;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .sponsor-circle {
@@ -2978,7 +2984,7 @@ table.alt tfoot {
     }
     /* Header */
     #header {
-        padding: 3em 0 6em 0;
+        padding: 2em 0 6em 0;
     }
 }
 

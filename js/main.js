@@ -9,6 +9,7 @@ $(document).ready(
         else {
             $(".item").addClass("active");
             $(this).find("a").html("<i class='fas fa-times'></i>");
+            $('body').css('padding-top',$('.nav').height);
         }
     });
 });
