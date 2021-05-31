@@ -1,15 +1,18 @@
 // Mobile menu: Show or hide items
 $(document).ready(
     function() {
-    $(".toggle").on("click", function() {
+    $('.menu li a').on("click", function(){
+        $('.menu .item').slideUp();
+    });
+    $(".toggle").on("click", function(e) {
         if ($(".item").hasClass("active")) {
             $(".item").removeClass("active");
-            $(this).find("a").html("<i class='fas fa-bars'></i>");
+            $('.menu .item').slideDown();
         } 
         else {
             $(".item").addClass("active");
-            $(this).find("a").html("<i class='fas fa-times'></i>");
         }
+        e.preventDefault();
     });
 });
 
