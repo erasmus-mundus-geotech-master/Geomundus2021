@@ -1,19 +1,19 @@
 // Mobile menu: Show or hide items
 $(document).ready(
     function() {
-    e.preventDefault();
-    $('.menu li a').on("click", function(e){
-        $('.menu .item').slideUp();
-    });
-    $(".toggle").on("click", function(e) {
-        if ($(".item").hasClass("active")) {
-            $(".item").removeClass("active");
-            $('.menu .item').slideDown();
-        } 
-        else {
-            $(".item").addClass("active");
-        }
-    });
+        $(".toggle").on("click", function(e) {
+            if ($(".item").hasClass("active")) {
+                $(".item").removeClass("active");
+                $('.menu .item').slideDown(500);
+            } 
+            else {
+                $(".item").addClass("active");
+            }
+            $('.menu li a').on("click", function(e){
+                $('.menu .item').slideUp(500);
+            });
+            e.preventDefault();
+        });
 });
 
 // All menus: Show or hide dropdown items

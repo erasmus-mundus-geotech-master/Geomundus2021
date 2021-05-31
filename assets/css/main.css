@@ -98,6 +98,10 @@ video {
     vertical-align: baseline;
 }
 
+br {
+    display: block !important;
+}
+
 body {
     margin: 0;
 }
@@ -173,13 +177,13 @@ ul.main-menu-dropdown li {
     visibility: hidden;
 }
 
-@media screen and (min-width: 680px) { 
+@media screen and (min-width: 780px) { 
     .mobile {
         display: none;
     }
 }
 
-@media screen and (min-width: 680px) { 
+@media screen and (min-width: 780px) { 
     nav {
         padding: 5px 220px 0px 220px;
     }
@@ -199,7 +203,7 @@ ul.main-menu-dropdown li {
     }
 }
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:780px) {
     nav {
         padding: 5px 10px 0px 0px;
     }
@@ -2360,6 +2364,12 @@ select {
     font-weight: 500;
 }
 
+@media screen and (max-width: 680px) { 
+    select {
+        margin-bottom: 30px;
+    }
+}
+
 select option {
     background: white;
     color: #363636;
@@ -3092,7 +3102,7 @@ table.alt tfoot {
         font-size: 12pt;
     }
     h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
     h2 {
         font-size: 1.5em;
