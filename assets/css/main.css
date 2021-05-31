@@ -99,7 +99,7 @@ video {
 }
 
 br {
-    display:block !important;
+    display: block !important;
 }
 
 body {
@@ -256,10 +256,6 @@ ul.main-menu-dropdown li {
         margin-top: 40px;
         height: 65px;
         width: 200px;
-    }
-
-    h1 {
-        font-size: 20px;
     }
 }
 
@@ -2368,6 +2364,12 @@ select {
     font-weight: 500;
 }
 
+@media screen and (max-width: 680px) { 
+    select {
+        margin-bottom: 30px;
+    }
+}
+
 select option {
     background: white;
     color: #363636;
@@ -3100,7 +3102,7 @@ table.alt tfoot {
         font-size: 12pt;
     }
     h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
     h2 {
         font-size: 1.5em;
