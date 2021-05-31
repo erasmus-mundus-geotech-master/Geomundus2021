@@ -1,7 +1,8 @@
 // Mobile menu: Show or hide items
 $(document).ready(
     function() {
-    $('.menu li a').on("click", function(){
+    e.preventDefault();
+    $('.menu li a').on("click", function(e){
         $('.menu .item').slideUp();
     });
     $(".toggle").on("click", function(e) {
@@ -12,7 +13,6 @@ $(document).ready(
         else {
             $(".item").addClass("active");
         }
-        e.preventDefault();
     });
 });
 
