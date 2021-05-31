@@ -98,6 +98,10 @@ video {
     vertical-align: baseline;
 }
 
+br {
+    display:block !important;
+}
+
 body {
     margin: 0;
 }
@@ -173,13 +177,13 @@ ul.main-menu-dropdown li {
     visibility: hidden;
 }
 
-@media screen and (min-width: 680px) { 
+@media screen and (min-width: 780px) { 
     .mobile {
         display: none;
     }
 }
 
-@media screen and (min-width: 680px) { 
+@media screen and (min-width: 780px) { 
     nav {
         padding: 5px 220px 0px 220px;
     }
@@ -199,7 +203,7 @@ ul.main-menu-dropdown li {
     }
 }
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:780px) {
     nav {
         padding: 5px 10px 0px 0px;
     }
@@ -252,6 +256,10 @@ ul.main-menu-dropdown li {
         margin-top: 40px;
         height: 65px;
         width: 200px;
+    }
+
+    h1 {
+        font-size: 20px;
     }
 }
 
