@@ -342,9 +342,9 @@ ul.main-menu-dropdown li {
 }
 
 #speakers-line-up .speaker {
-    background: linear-gradient(to bottom, #2f455c 0%, #74c9d4 42%, #ffffff 42%, #ffffff 100%);
+    background: linear-gradient(to bottom, #0c2138 0%, #61d3f3 42%, #ffffff 42%, #ffffff 100%);
     text-align: center;
-}
+} 
 
 #speakers-line-up .speaker-more, #speakers-line-up .speaker-less {
     font-size: 50px;
@@ -368,6 +368,7 @@ ul.main-menu-dropdown li {
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
     border-radius: 50%;
     width: 230px;
+    padding: 7px;
 }
 
 #speakers-line-up .speaker-name {
