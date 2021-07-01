@@ -2563,10 +2563,10 @@ textarea {
 
 .sponsor-circle-div {
     background-color: white;
-    border: 10px solid #c3c6c7;
+    border: 7px solid #c3c6c7;
     height: 180px;
     width: 180px;
-    border-radius: 70%;
+    border-radius: 50%;
     text-align: center;
     outline: none;
     display: block;
@@ -2579,7 +2579,7 @@ textarea {
 }
 
 .sponsor-circle-div:hover {
-    border: 10px solid #000000;
+    border: 7px solid #74c9d4;
 }
 
 /* END: Sponsors */
