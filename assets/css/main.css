@@ -189,7 +189,7 @@ ul.main-menu-dropdown li {
 
 @media screen and (min-width: 780px) { 
     nav {
-        padding: 5px 220px 0px 220px;
+        padding: 5px 9%;
     }
     
     .menu_logo {
@@ -207,7 +207,7 @@ ul.main-menu-dropdown li {
     }
 }
 
-@media screen and (max-width:780px) {
+@media screen and (max-width: 780px) {
     nav {
         padding: 5px 10px 0px 0px;
     }
@@ -332,11 +332,11 @@ ul.main-menu-dropdown li {
 @media screen and (max-width: 680px) {
      
     #countdown li {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     #countdown li span {
-        font-size: 30px;
+        font-size: 28px;
     }
 }
 
@@ -438,7 +438,7 @@ ul.main-menu-dropdown li {
     color: #257ac0;
 }
 
-@media screen and (min-width: 680px) { 
+@media screen and (min-width: 768px) { 
     
     #speakers-line-up .speaker, #speakers-line-up .keynote{
         order: 0;
@@ -451,7 +451,7 @@ ul.main-menu-dropdown li {
     }
 }
 
-@media screen and (max-width: 680px) { 
+@media screen and (max-width: 768px) { 
     
     #speakers-line-up .speaker, #speakers-line-up .keynote {
         order: 0;
@@ -751,28 +751,18 @@ body {
 /* START: Containers */
 .container {
     margin: auto;
+
 }
 
-@media screen and (max-width: 1680px) {
+@media screen and (min-width: 768px) {
     .container {
-        width: 60em;
+        padding: 0 10%;
     }
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 768px) {
     .container {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 980px) {
-    .container {
-        width: 100% !important;
-        margin-bottom: 50px;
-    }
-
-    h2 {
-        margin-top: 0px !important;
+        padding: 0 2%;
     }
 }
 
@@ -3076,7 +3066,7 @@ table.alt tfoot {
 
 /* XLarge */
 
-@media screen and (max-width: 1680px) {
+@media screen and (max-width: 2560px) {
     /* Basic */
     body,
     input,
