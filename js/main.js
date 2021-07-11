@@ -32,7 +32,7 @@ $(document).ready(
     );
 });
 
-
+// Show speakers information in homepage when pressing +
 function show(dv){
 
     if(dv == '1'){
@@ -61,6 +61,7 @@ function show(dv){
     }
 }
 
+// Hide speakers information in homepage when pressing -
 function hide(dv){
 
     if(dv == '1'){
@@ -89,9 +90,32 @@ function hide(dv){
     }
 }
 
+// Countdown timer
+countdown();
+function countdown() {
+    const second = 1000,
+          minute = second * 60,
+          hour = minute * 60,
+          day = hour * 24;
+  
+    let birthday = "Nov 26, 2021 09:00:00",
+        countDown = new Date(birthday).getTime(),
+        x = setInterval(function() {    
+  
+          let now = new Date().getTime(),
+              distance = countDown - now;
+  
+          document.getElementById("days").innerText = Math.floor(distance / (day)),
+            document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+            document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+            document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
 
+        }, 0)
+    }
+;
 
 /*
+// Not necessary this year: alert banner
     topmenu();
     function topmenu(){    
         let h = $('.alertbanner').css('height');
@@ -142,7 +166,8 @@ function hide(dv){
 
 */
 
-//map control
+/*
+// Not necessary this year: Map control
 function toggle(a) {
     var x = a;
     var b = a.innerHTML;
@@ -499,3 +524,4 @@ $(window).resize(function() {
     map.panTo(WWUloc);
     map.setZoom(13);
 }
+*/
