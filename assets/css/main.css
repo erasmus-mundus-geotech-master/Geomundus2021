@@ -2610,6 +2610,17 @@ textarea {
     justify-content: space-around; 
     align-items: flex-start;
 }
+.sponsor-circle-divgold {
+    background-color: white;
+    border: 6px solid #d4af37;
+    height: 180px;
+    width: 180px;
+    border-radius: 55%;
+    text-align: center;
+    outline: none;
+    display: block;
+    margin-top: 20px;
+}
 
 .sponsor-circle-div {
     background-color: white;
@@ -2622,7 +2633,17 @@ textarea {
     display: block;
     margin-top: 20px;
 }
-
+.partner-circle-div {
+    background-color: white;
+    border: 7px solid #eeeeee;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    text-align: center;
+    outline: none;
+    display: block;
+    margin-top: 20px;
+}
 .sponsor-circle {
     width: 150px;
     height: 150px;
