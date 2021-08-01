@@ -2622,13 +2622,24 @@ textarea {
     display: block;
     margin-top: 20px;
 }
-
 .sponsor-circle {
     width: 150px;
     height: 150px;
 }
-
+.gold{
+    border: 6px solid #d4af37
+}
+.partner{
+    border: 6px solid #eeeeee
+}
 .sponsor-circle-div:hover {
+    border: 7px solid #74c9d4;
+}
+
+.gold:hover {
+    border: 7px solid #c4da01;
+}
+.partner:hover {
     border: 7px solid #74c9d4;
 }
 
