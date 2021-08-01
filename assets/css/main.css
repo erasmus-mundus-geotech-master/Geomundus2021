@@ -185,11 +185,9 @@ ul.main-menu-dropdown li {
     .mobile {
         display: none;
     }
-}
 
-@media screen and (min-width: 780px) { 
     nav {
-        padding: 5px 9%;
+        padding: 5px 9% 2px 9%;
     }
     
     .menu_logo {
@@ -2611,9 +2609,13 @@ textarea {
     align-items: flex-start;
 }
 
+.sponsor-circle {
+    width: 150px;
+    height: 150px;
+}
+
 .sponsor-circle-div {
     background-color: white;
-    border: 7px solid #c3c6c7;
     height: 180px;
     width: 180px;
     border-radius: 50%;
@@ -2622,26 +2624,31 @@ textarea {
     display: block;
     margin-top: 20px;
 }
-.sponsor-circle {
-    width: 150px;
-    height: 150px;
-}
+
 .gold{
-    border: 6px solid #d4af37
-}
-.partner{
-    border: 6px solid #eeeeee
-}
-.sponsor-circle-div:hover {
-    border: 7px solid #74c9d4;
+    border: 6px solid #d4af37;
 }
 
 .gold:hover {
-    border: 7px solid #c4da01;
+    border: 6px solid #75c556;
 }
+
+.silver{
+    border: 6px solid #c0c0c0;
+}
+
+.silver:hover {
+    border: 6px solid #65c6e4;
+}
+
+.partner{
+    border: 6px solid #eeeeee;
+}
+
 .partner:hover {
-    border: 7px solid #74c9d4;
+    border: 6px solid #888888;
 }
+
 
 /* END: Sponsors */
 
@@ -3262,7 +3269,7 @@ table.alt tfoot {
 
     /* Main */
     .main {
-        padding: 2em 1.5em 0.1em 1.5em;
+        padding: 2em 1.5em 3em 1.5em;
     }
     /* Header */
     #header {
