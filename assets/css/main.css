@@ -2610,17 +2610,6 @@ textarea {
     justify-content: space-around; 
     align-items: flex-start;
 }
-.sponsor-circle-divgold {
-    background-color: white;
-    border: 6px solid #d4af37;
-    height: 180px;
-    width: 180px;
-    border-radius: 55%;
-    text-align: center;
-    outline: none;
-    display: block;
-    margin-top: 20px;
-}
 
 .sponsor-circle-div {
     background-color: white;
@@ -2633,23 +2622,24 @@ textarea {
     display: block;
     margin-top: 20px;
 }
-.partner-circle-div {
-    background-color: white;
-    border: 7px solid #eeeeee;
-    height: 180px;
-    width: 180px;
-    border-radius: 50%;
-    text-align: center;
-    outline: none;
-    display: block;
-    margin-top: 20px;
-}
 .sponsor-circle {
     width: 150px;
     height: 150px;
 }
-
+.gold{
+    border: 6px solid #d4af37
+}
+.partner{
+    border: 6px solid #eeeeee
+}
 .sponsor-circle-div:hover {
+    border: 7px solid #74c9d4;
+}
+
+.gold:hover {
+    border: 7px solid #c4da01;
+}
+.partner:hover {
     border: 7px solid #74c9d4;
 }
 
