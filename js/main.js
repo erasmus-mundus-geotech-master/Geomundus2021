@@ -9,9 +9,6 @@ $(document).ready(
             else {
                 $(".item").addClass("active");
             }
-            $('.menu li a').on("click", function(e){
-                $('.menu .item').slideUp(500);
-            });
             e.preventDefault();
         });
 });
