@@ -111,6 +111,23 @@ function countdown() {
     }
 ;
 
+// Toggle buttons (+) that can be found in the schedule
+function toggle(a) {
+    var x = a;
+    var b = a.innerHTML;
+    if (x.nextElementSibling.style.display === 'none') {
+        b = b.split('+');
+        b = "-" + b[1];
+        a.innerHTML = b;
+        x.nextElementSibling.style.display = 'block';
+    } else {
+        b = b.split('-');
+        b = "+" + b[1];
+        a.innerHTML = b;
+        x.nextElementSibling.style.display = 'none';
+    }
+}
+
 /*
 // Not necessary this year: alert banner
     topmenu();
@@ -163,24 +180,9 @@ function countdown() {
 
 */
 
-/*
-// Not necessary this year: Map control
-function toggle(a) {
-    var x = a;
-    var b = a.innerHTML;
-    if (x.nextElementSibling.style.display === 'none') {
-        b = b.split('+');
-        b = "-" + b[1];
-        a.innerHTML = b;
-        x.nextElementSibling.style.display = 'block';
-    } else {
-        b = b.split('-');
-        b = "+" + b[1];
-        a.innerHTML = b;
-        x.nextElementSibling.style.display = 'none';
-    }
-}
 
+
+/*
 var map;
 var markers;
 
