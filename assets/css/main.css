@@ -2700,7 +2700,7 @@ textarea {
 }
 
 .gold{
-    border: 6px solid #d4af37;
+    border: 6px solid #DAA520;
 }
 
 .gold:hover {
@@ -2708,11 +2708,19 @@ textarea {
 }
 
 .silver{
-    border: 6px solid #c0c0c0;
+    border: 6px solid #C0C0C0;
 }
 
 .silver:hover {
     border: 6px solid #65c6e4;
+}
+
+.bronze{
+    border: 6px solid #CD7F32;
+}
+
+.bronze:hover {
+    border: 6px solid #ff413b;
 }
 
 .partner{
