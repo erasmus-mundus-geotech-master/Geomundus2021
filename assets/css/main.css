@@ -345,16 +345,15 @@ ul.main-menu-dropdown li {
 #speakers-line-up .speakers-all {
     display: flex; 
     flex-wrap: wrap; 
-    justify-content: space-between; 
+    justify-content: center; 
     align-items: flex-start;
-    margin: 0px;
 }
 
 #speakers-line-up .speaker, #speakers-line-up .keynote {
     border-radius: 4px;
     box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.25);
     padding: 15px;
-    margin-bottom: 20px;
+    margin: 10px auto;
 }
 
 #speakers-line-up .keynote {
@@ -490,11 +489,25 @@ ul.main-menu-dropdown li {
 }
 
 .speaker-main-box a{
-    color: black !important;
+    color: black;
 }
 
 .speaker-main-box a:hover{
-    color: rgb(46,98,124) !important;
+    color: rgb(46,98,124);
+}
+
+.speaker-main-box-blue {
+    text-align: center;
+    background-color: #0c2138;
+    width: 100%;
+}
+
+.speaker-main-box-blue a{
+    color: white;
+}
+
+.speaker-main-box-blue a:hover{
+    color: rgb(46,98,124);
 }
 
 /* END: Main - Speakers */

@@ -56,6 +56,18 @@ function show(dv){
         document.getElementById("keynote-6").style.display = "block";
         document.getElementById("speaker-6").style.display = "none";
     }
+    else if(dv == '7'){
+        document.getElementById("keynote-7").style.display = "block";
+        document.getElementById("speaker-7").style.display = "none";
+    }
+    else if(dv == '8'){
+        document.getElementById("keynote-8").style.display = "block";
+        document.getElementById("speaker-8").style.display = "none";
+    }
+    else if(dv == '9'){
+        document.getElementById("keynote-9").style.display = "block";
+        document.getElementById("speaker-9").style.display = "none";
+    }
 }
 
 // Hide speakers information in homepage when pressing -
@@ -84,6 +96,18 @@ function hide(dv){
     else if(dv == '6'){
         document.getElementById("keynote-6").style.display = "none";
         document.getElementById("speaker-6").style.display = "block";
+    }
+    else if(dv == '7'){
+        document.getElementById("keynote-7").style.display = "none";
+        document.getElementById("speaker-7").style.display = "block";
+    }
+    else if(dv == '8'){
+        document.getElementById("keynote-8").style.display = "none";
+        document.getElementById("speaker-8").style.display = "block";
+    }
+    else if(dv == '9'){
+        document.getElementById("keynote-9").style.display = "none";
+        document.getElementById("speaker-9").style.display = "block";
     }
 }
 
