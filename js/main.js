@@ -119,8 +119,8 @@ function countdown() {
           hour = minute * 60,
           day = hour * 24;
   
-    let birthday = "Nov 26, 2021 09:00:00",
-        countDown = new Date(birthday).getTime(),
+    let conference_date = "Nov 26, 2021 09:00:00",
+        countDown = new Date(conference_date).getTime(),
         x = setInterval(function() {    
   
           let now = new Date().getTime(),
